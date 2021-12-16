@@ -7,8 +7,8 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee,key,value){employee
     
 //console.log(destructivelyUpdateEmployeeWithKeyAndValue(employee,))
 function deleteFromEmployeeByKey (employee,key){ const newObj= [...employee[key]]; delete newObj.key; return newObj}
-function destructivelyDeleteFromEmployeeByKey(employee,key){const newObj= delete employee[key];return newObj}
+function destructivelyDeleteFromEmployeeByKey(employee,key){const newObj= employee; delete newObj[key];return newObj}
  
-   console.log( deleteFromEmployeeByKey(employee,'name'))
-   //console.log(newObj)
+  //console.log( deleteFromEmployeeByKey(employee,'name'))
+   console.log(employee)
     
